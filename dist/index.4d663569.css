@@ -1,3 +1,114 @@
+@import "https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+* {
+  color: var(--c-blue-navy);
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
 
+:root {
+  --c-beige: #e8d5b7;
+  --c-blue-navy: #13271f;
+  --c-red: #cf0016;
+  --c-yellow: #f5b349;
+}
+
+main {
+  margin: 2rem 5rem;
+}
+
+nav {
+  border-bottom: 1px solid var(--c-yellow);
+  justify-content: space-between;
+  align-items: center;
+  padding: .9rem 2.4rem;
+  display: flex;
+}
+
+nav img {
+  height: 50%;
+  max-height: 60px;
+  width: auto;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 1rem;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: var(--c-red);
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.home-container img {
+  width: 100vw;
+  height: auto;
+}
+
+.home-container {
+  text-align: center;
+  position: relative;
+}
+
+.text-home-center {
+  background-color: #f5b349cc;
+  border-radius: 1vh;
+  padding: 3rem 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-home-center h1 {
+  color: var(--c-blue-navy);
+  font-size: 3rem;
+}
+
+.text-home-center h3 {
+  color: var(--c-blue-navy);
+  font-size: 2rem;
+}
+
+.text-home-center p {
+  color: var(--c-blue-navy);
+  font-size: 1.06rem;
+  font-weight: 500;
+}
+
+.home-line {
+  width: 20%;
+  text-align: center;
+  border: 1px solid var(--c-blue-navy);
+  margin: 1rem 40%;
+}
+
+.category {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5rem 7rem 0;
+  display: grid;
+}
+
+.card {
+  text-align: center;
+  border-radius: 1vh;
+  padding: 2rem 3rem;
+  box-shadow: 0 10px 15px -3px #13271f1a;
+}
+
+.hr-card {
+  width: 20%;
+  text-align: center;
+  border: 1px solid var(--c-blue-navy);
+  margin: .5rem 40%;
+}
 
 /*# sourceMappingURL=index.4d663569.css.map */

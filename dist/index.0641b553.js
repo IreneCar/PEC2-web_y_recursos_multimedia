@@ -557,6 +557,8 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"bNKaB":[function(require,module,exports) {
+let n = "world";
+console.log(`Hello ${n}`);
 
 },{}]},["lKzq4","bNKaB"], "bNKaB", "parcelRequire94f2")
 

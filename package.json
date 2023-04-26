@@ -1,13 +1,20 @@
 {
   "name": "pec1-desarrollo-de-una-web",
-  "version": "1.0.0",
-  "description": "Creación de una página web para la práctica de la asignatura Herramientas HTML y CSS del máster Desarrollo de Aplicaciones y Páginas Web realizado en la UOC.",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
   },
-  "author": "Irene Carrion <icarrionr@uoc.edu>",
-  "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "npm-run-all": "^4.1.5",
+    "parcel": "latest",
+    "rimraf": "^5.0.0"
+  },
+  "dependencies": {
+    "photoswipe": "^5.3.7"
   }
 }

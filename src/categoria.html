@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florencia - Categoría</title>
+
+  <!-- link que conecta la hoja de estilos con el html -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- link que conecta la hoja de estilos de la dependencia photoswipe con el html -->
+  <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
+  <!-- link que conecta el archivo javascript con el html -->
+  <script type="module" src="./app.js"></script>
+  <!-- link que conecta el archivo js de la dependencia photoswipe con el html -->
+  <script type="module">
+      import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+      });
+      lightbox.init();
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="./index.html"><img src="./img/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.png" alt="simbolo de florencia"></a>
+    <ul>
+      <li><a href="./categoria.html">Categoría</a></li>
+      <li><a href="./presentacion.html">Presentación</a></li>
+      <li><a href="./enlaces.html">Bibliografía</a></li>
+    </ul>
+  </nav>
+
+  <main class="category">
+    <div class="card">
+      <h3>La cúpula de Brunelleschi</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+    <div class="card">
+      <h3>Baptisterio de San Juan</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+    <div class="card">
+      <h3>Plaza de la Signoria</h3>
+      <hr class="hr-card">
+      <p>Plaza de la Signoria</p>
+    </div>
+    <div class="card">
+      <h3>Palazzo Vecchio</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+    <div class="card">
+      <h3>Ponte Vecchio</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+    <div class="card">
+      <h3>Galería de la Academia</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+    <div class="card">
+      <h3>Iglesia Santa María Novella</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+    <div class="card">
+      <h3>Plaza Michelangelo</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+    <div class="card">
+      <h3>Jardines de Boboli</h3>
+      <hr class="hr-card">
+      <p>Breve descripción</p>
+    </div>
+  </main>
+</body>
+</html>
