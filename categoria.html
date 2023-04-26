@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florencia - Categoría</title>
+  <link rel="icon" type="image/x-icon" href="./src/img/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.png">
+
+  <!-- link que conecta la hoja de estilos con el html -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- link que conecta el archivo javascript con el html -->
+  <script type="module" src="./app.js"></script>
+
+  <!-- link que conecta la hoja de estilos de la dependencia photoswipe con el html -->
+  <link rel="stylesheet" href="./photoswipe/dist/photoswipe.css">
+  <!-- link que conecta el archivo js de la dependencia photoswipe con el html -->
+  <script type="module">
+      import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+      });
+      lightbox.init();
+  </script>
+</head>
+
+
+<body>
+  <nav>
+    <div class="nav-logo-flex">
+      <a href="./index.html"><img src="./src/img/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.png" alt="simbolo de florencia"></a>
+      <a href="./index.html"><h2>Florencia</h2></a>
+    </div>
+    <ul>
+      <li><a href="./categoria.html">Para ver</a></li>
+      <li><a href="./presentacion.html">Sobre Florencia</a></li>
+      <li><a href="./enlaces.html">Bibliografía</a></li>
+    </ul>
+  </nav>
+
+  <main class="category-main">
+
+    <h1 class="title">No te puedes perder...</h1>
+
+    <div class="category">
+      
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-pixabay-45855.jpg" alt="cúpula de Brunelleschi">
+          <div class="card-text">
+            <h3>La cúpula de Brunelleschi</h3>
+            <hr class="hr-card">
+            <p>Constituye la cubierta del crucero de la catedral de Santa María del Fiore de Florencia.</p>
+          </div>
+        </a>
+      </div>
+      
+      
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-emanuele-pescarolo-8669295.jpg" alt="Baptisterio de San Juan">
+          <div class="card-text">
+            <h3>Baptisterio de San Juan</h3>
+            <hr class="hr-card">
+            <p>Uno de los edificios más antiguos de la ciudad.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-tonynojmansk-12066499.jpg" alt="Plaza de la Signoria">
+          <div class="card-text">
+            <h3>Plaza de la Signoria</h3>
+            <hr class="hr-card">
+            <p>Es la plaza más importante de Florencia.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-marco-carlotti-6727621.jpg" alt="Palazzo Vecchio">
+          <div class="card-text">
+            <h3>Palazzo Vecchio</h3>
+            <hr class="hr-card">
+            <p>Es el hogar del Museo dei Ragazzi y de las oficinas del Ayuntamiento.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-maegan-white-981686.jpg" alt="Ponte Vecchio">
+          <div class="card-text">
+            <h3>Ponte Vecchio</h3>
+            <hr class="hr-card">
+            <p>Puente medieval sobre el río Arno en Florencia.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-fabio-mariano-4046386.jpg" alt="Galería de la Academia">
+          <div class="card-text">
+            <h3>Galería de la Academia</h3>
+            <hr class="hr-card">
+            <p>Uno de los museos más visitados de Florencia y del mundo.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/eleonora-altomare-lMlhYD3Tktg-unsplash.jpg" alt="Iglesia Santa María Novella">
+          <div class="card-text">
+            <h3>Iglesia Santa María Novella</h3>
+            <hr class="hr-card">
+            <p>Una de las iglesias más importantes de la ciudad.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-polina-chistyakova-2815101.jpg" alt="Plaza Michelangelo">
+          <div class="card-text">
+            <h3>Plaza Michelangelo</h3>
+            <hr class="hr-card">
+            <p>El mejor lugar para contemplar Florencia.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="./detalle.html">
+          <img class="img-card" src="./src/img/pexels-maria-orlova-4946835.jpg" alt="Jardines de Boboli">
+          <div class="card-text">
+            <h3>Jardines de Boboli</h3>
+            <hr class="hr-card">
+            <p>El parque más famoso de la ciudad de Florencia.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
