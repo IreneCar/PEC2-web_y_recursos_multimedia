@@ -5,14 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Florencia</title>
+  <link rel="icon" type="image/x-icon" href="/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.24b0eb74.png">
+
   <!-- link que conecta la hoja de estilos con el html -->
   <link rel="stylesheet" href="/index.4d663569.css">
   <!-- link que conecta la hoja de estilos de la dependencia photoswipe con el html -->
   <link rel="stylesheet" href="/index.0593abdb.css">
-  <!-- link que conecta el archivo javascript con el html -->
-  <script src="/index.b3edad05.js"></script><script src="/index.0641b553.js" defer=""></script>
+ 
   <!-- link que conecta el archivo js de la dependencia photoswipe con el html -->
-  <script>// modules are defined as an array
+  <script src="/index.1aa026c9.js"></script><script>// modules are defined as an array
 // [ module function, map of requires ]
 //
 // map of requires is short require name -> numeric require
@@ -156,13 +157,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"6C1Gh":[function(require,module,exports) {
+})({"1hVqh":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "fe43b14b346f1550";
+module.bundle.HMR_BUNDLE_ID = "b25f92040204dede";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -570,7 +571,7 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"8SNpy":[function(require,module,exports) {
+},{}],"81u0S":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _photoswipeLightboxEsmJs = require("photoswipe/dist/photoswipe-lightbox.esm.js");
 var _photoswipeLightboxEsmJsDefault = parcelHelpers.interopDefault(_photoswipeLightboxEsmJs);
@@ -581,13 +582,13 @@ const lightbox = new (0, _photoswipeLightboxEsmJsDefault.default)({
 });
 lightbox.init();
 
-},{"photoswipe/dist/photoswipe-lightbox.esm.js":"3kRIy","e59600b2e6afa57a":"iejlg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iejlg":[function(require,module,exports) {
-module.exports = require("6818a0517f445122")(require("1fc56cb8ea2f1c1c").getBundleURL("lPrv3") + "photoswipe.esm.f6f31c2f.js" + "?" + Date.now()).catch((err)=>{
+},{"photoswipe/dist/photoswipe-lightbox.esm.js":"3kRIy","e59600b2e6afa57a":"cjzzI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cjzzI":[function(require,module,exports) {
+module.exports = require("d957cc337ab31fa3")(require("a79ff202bc9d11ea").getBundleURL("fjtzB") + "photoswipe.esm.f6f31c2f.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
 }).then(()=>module.bundle.root("eEaUx"));
 
-},{"6818a0517f445122":"61B45","1fc56cb8ea2f1c1c":"lgJ39"}],"61B45":[function(require,module,exports) {
+},{"d957cc337ab31fa3":"61B45","a79ff202bc9d11ea":"lgJ39"}],"61B45":[function(require,module,exports) {
 "use strict";
 var cacheLoader = require("c59983a15c3174e6");
 module.exports = cacheLoader(function(bundle) {
@@ -713,18 +714,24 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["6C1Gh","8SNpy"], "8SNpy", "parcelRequire94f2")
+},{}]},["1hVqh","81u0S"], "81u0S", "parcelRequire94f2")
 
 </script>
+
+  <!-- link que conecta el archivo javascript con el html -->
+  <script src="/index.0641b553.js" defer=""></script>
 </head>
 
 
 <body>
   <nav>
-    <a href="/index.html"><img src="/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.24b0eb74.png" alt="simbolo de florencia"></a>
+    <div class="nav-logo-flex">
+      <a href="/index.html"><img src="/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.24b0eb74.png" alt="simbolo de florencia"></a>
+      <a href="/index.html"><h2>Florencia</h2></a>
+    </div>
     <ul>
-      <li><a href="/categoria.html">Categoría</a></li>
-      <li><a href="/presentacion.html">Presentación</a></li>
+      <li><a href="/categoria.html">Para ver</a></li>
+      <li><a href="/presentacion.html">Sobre Florencia</a></li>
       <li><a href="/enlaces.html">Bibliografía</a></li>
     </ul>
   </nav>
@@ -737,9 +744,11 @@ exports.export = function(dest, destName, get) {
         <h1>Florencia</h1>
         <h3>La ciudad más bella de Italia.</h3>
         <hr class="home-line">
-        <p>
-          Si tuviese que elegir una ciudad donde escaparme, sería Florencia. Es una ciudad hermosa, tranquila, llena de color y de arte y aquí voy a mostrarte un poco de todas estas cosas bellas de esta ciudad.
+        <p id="summary">
+          <!-- Si tuviese que elegir una ciudad donde escaparme, sería Florencia. Es una ciudad hermosa, tranquila, llena de color y de arte y aquí voy a mostrarte un poco de todas estas cosas bellas de esta ciudad. -->
         </p>
+
+        <button id="button">Clica para ver un resumen</button>
       </div>
     </div>
   </section>

@@ -36,14 +36,26 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 1rem;
+  margin-left: 2rem;
   list-style-type: none;
 }
 
-nav ul li a {
+nav a, nav ul li a {
   color: var(--c-red);
   font-size: 1.15rem;
   text-decoration: none;
+}
+
+.nav-logo-flex {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-logo-flex h2 {
+  color: var(--c-red);
+  margin-left: 1rem;
+  font-size: 2rem;
 }
 
 .home-container img {
@@ -89,6 +101,17 @@ nav ul li a {
   margin: 1rem 40%;
 }
 
+button {
+  background-color: var(--c-beige);
+  color: var(--c-red);
+  border: 0;
+  border-radius: 50px;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: .9rem;
+  box-shadow: 0 10px 15px -3px #13271f1a;
+}
+
 .category-main {
   margin: 5% 15%;
 }
@@ -105,6 +128,10 @@ nav ul li a {
   grid-row-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
   display: grid;
+}
+
+.category a {
+  text-decoration: none;
 }
 
 .card {
@@ -137,20 +164,84 @@ nav ul li a {
 }
 
 .presentacion-main {
-  margin: 5% 15%;
-}
-
-.pflex-2col p {
-  margin-bottom: 1.5rem;
+  margin: 5% 10%;
 }
 
 .flex-2col {
   display: flex;
 }
 
+.title-left {
+  color: var(--c-yellow);
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+}
+
+.flex-2col p {
+  margin-bottom: 1.5rem;
+}
+
 .flex-2col img {
-  width: 40%;
+  width: 50%;
   height: auto;
+  margin-right: 2rem;
+}
+
+.section-detalle img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  display: block;
+}
+
+article {
+  margin: 5% 10%;
+}
+
+article p {
+  margin-bottom: 1.5rem;
+}
+
+.list-detalle {
+  list-style-type: none;
+}
+
+.list-detalle li ul {
+  border-left: 1px solid var(--c-red);
+  margin-top: .5rem;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.main-links {
+  margin: 5% 10%;
+}
+
+.main-links h3 {
+  color: var(--c-red);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.main-links li {
+  color: var(--c-blue-navy);
+  margin-bottom: 1rem;
+}
+
+.main-links li a {
+  color: var(--c-red);
+  text-decoration: none;
+}
+
+.main-links li a:hover {
+  text-decoration: underline;
+}
+
+.main-links li ul {
+  border-left: 1px solid var(--c-beige);
+  margin-top: .5rem;
+  padding-left: 1rem;
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */

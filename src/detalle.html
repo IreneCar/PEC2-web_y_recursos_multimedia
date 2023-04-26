@@ -5,8 +5,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Florencia - Detalle</title>
+  <link rel="icon" type="image/x-icon" href="./img/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.png">
+
+  <!-- link que conecta la hoja de estilos con el html -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- link que conecta la hoja de estilos de la dependencia photoswipe con el html -->
+  <link rel="stylesheet" href="../photoswipe/dist/photoswipe.css">
+  <!-- link que conecta el archivo javascript con el html -->
+  <script type="module" src="./app.js"></script>
+  <!-- link que conecta el archivo js de la dependencia photoswipe con el html -->
+  <script type="module">
+      import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm.js';
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: '#my-gallery',
+        children: 'a',
+        pswpModule: () => import('photoswipe/dist/photoswipe.esm.js')
+      });
+      lightbox.init();
+  </script>
 </head>
 <body>
+
+  <nav>
+    <div class="nav-logo-flex">
+      <a href="./index.html"><img src="./img/kisspng-florence-symbol-versailles-hotel-city-italy-flag-5ac4e1606f3343.3635169615228521924555.png" alt="simbolo de florencia"></a>
+      <a href="./index.html"><h2>Florencia</h2></a>
+    </div>
+    <ul>
+      <li><a href="./categoria.html">Para ver</a></li>
+      <li><a href="./presentacion.html">Sobre Florencia</a></li>
+      <li><a href="./enlaces.html">Bibliografía</a></li>
+    </ul>
+  </nav>
+
+  <section class="section-detalle">
+    <img src="./img/pexels-tonynojmansk-12066499.jpg" alt="plaza de la Signoria de Florencia">
+  </section>
+  <article>
+    <h1 class="title">Plaza de la Signoria</h1>
+
+    <p>La plaza de la Signoria es el centro político y social de Florencia y está ubicada en el camino que va de la Piazza del Duomo hacia el río Arno. Esta plaza es una obra de arte en sí misma, es un museo al aire libre y tiene varios puntos de interés:
+
+      <ul class="list-detalle">
+        <li><h4>Palazzo Vecchio</h4>
+          <ul>
+            <li><p>Por un lado, podemos ver el Palazzo Vecchio, un edificio cuya construcción se remonta a los años 1299-1314 para ser la vivienda y el lugar de trabajo de los funcionarios del gobierno.</p></li>
+          </ul>
+        </li>
+
+        <li><h4>Logia dei Lanzi</h4>
+          <ul>
+            <li><p>La Logia es un pórtico que cubre una serie de esculturas con obras de los Medici y que antiguamente, cuando fue construido en los años 1376-1381, su utilidad era ser el lugar donde se celebraban las asambleas de la ciudad.</p></li>
+          </ul>
+        </li>
+
+        <li><h4>Fuente de Neptuno</h4>
+          <ul>
+            <li><p>Esta fuente se creó en 1563 por Ammannati y se comenta que la estatua de Neptuno tiene la apariencia de Cosme de Medici. Además, tiene unos bajorrelieves que destacan episodios importantes relacionados con este Medici, creadas por Giambologna en 1594.</p></li>
+          </ul>
+        </li>
+      </ul>
+    </p>
+
+    <p>En esta plaza se encuentran edificios importantes que han formado parte de la historia de la ciudad. Aquí han ocurrido eventos como competencias, manifestaciones e incluso ejecuciones y en el tiempo del Imperio Romano se construyeron unas termas.</p>
+  </article>
   
 </body>
 </html>
