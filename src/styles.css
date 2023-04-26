@@ -81,12 +81,12 @@ nav ul li a {
 }
 
 .text-home-center h1 {
-  color: var(--c-blue-navy);
+  color: var(--c-red);
   font-size: 3rem;
 }
 
 .text-home-center h3 {
-  color: var(--c-blue-navy);
+  color: var(--c-red);
   font-size: 2rem;
 }
 
@@ -101,19 +101,29 @@ nav ul li a {
   margin: 1rem 40%;
   width: 20%;
   text-align: center;
-  border: 1px solid var(--c-blue-navy);
+  border: 1px solid var(--c-red);
 }
 
 /* -------- Categoría ----------------------------------- */
+.category-main {
+  margin: 5% 15% 5% 15%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+  color: var(--c-yellow);
+}
+
 /* creo un grid para organizar el contenido con grid para que sea más cuadrado y pulcro */
 .category {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  margin: 5% 15% 5% 15%;
 }
-
+/* creación de la tarjeta con el box-shadow que hace como un "dibujo" del contorno sin necesidad de añadir un borde */
 .card {
   box-shadow: 0px 10px 15px -3px rgba(19, 39, 31, 0.1);
   text-align: center;
@@ -124,7 +134,7 @@ nav ul li a {
   margin: 0.5rem 40%;
   width: 20%;
   text-align: center;
-  border: 1px solid var(--c-blue-navy);
+  border: 1px solid var(--c-yellow);
 }
 
 .img-card {
@@ -136,5 +146,29 @@ nav ul li a {
 }
 
 .card-text {
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
+}
+
+.card-text h3 {
+  color: var(--c-red);
+}
+
+/* -------- Presentación ----------------------------------- */
+
+.presentacion-main {
+  margin: 5% 15% 5% 15%;
+}
+
+/* margen que hace la función de salto de párrafo */
+.pflex-2col p {
+  margin-bottom: 1.5rem;
+}
+
+.flex-2col {
+  display: flex;
+}
+
+.flex-2col img {
+  width: 40%;
+  height: auto;
 }

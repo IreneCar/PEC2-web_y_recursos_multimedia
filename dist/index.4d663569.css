@@ -67,12 +67,12 @@ nav ul li a {
 }
 
 .text-home-center h1 {
-  color: var(--c-blue-navy);
+  color: var(--c-red);
   font-size: 3rem;
 }
 
 .text-home-center h3 {
-  color: var(--c-blue-navy);
+  color: var(--c-red);
   font-size: 2rem;
 }
 
@@ -85,15 +85,25 @@ nav ul li a {
 .home-line {
   width: 20%;
   text-align: center;
-  border: 1px solid var(--c-blue-navy);
+  border: 1px solid var(--c-red);
   margin: 1rem 40%;
+}
+
+.category-main {
+  margin: 5% 15%;
+}
+
+.title {
+  text-align: center;
+  color: var(--c-yellow);
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
 }
 
 .category {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
-  margin: 5% 15%;
   display: grid;
 }
 
@@ -106,7 +116,7 @@ nav ul li a {
 .hr-card {
   width: 20%;
   text-align: center;
-  border: 1px solid var(--c-blue-navy);
+  border: 1px solid var(--c-yellow);
   margin: .5rem 40%;
 }
 
@@ -119,7 +129,28 @@ nav ul li a {
 }
 
 .card-text {
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
+}
+
+.card-text h3 {
+  color: var(--c-red);
+}
+
+.presentacion-main {
+  margin: 5% 15%;
+}
+
+.pflex-2col p {
+  margin-bottom: 1.5rem;
+}
+
+.flex-2col {
+  display: flex;
+}
+
+.flex-2col img {
+  width: 40%;
+  height: auto;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
