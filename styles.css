@@ -105,8 +105,9 @@ nav ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(245, 179, 73, 0.8);
-  padding: 4vh 6vw;
+  padding: 6vh 10vw 6vh 4vw;
   border-radius: 1vh;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 .text-home-center h1 {
@@ -146,7 +147,7 @@ button {
 
 /* -------- Categoría ----------------------------------- */
 .category-main {
-  margin: 5% 15% 5% 15%;
+  margin: 5% 15%;
 }
 
 .title {
@@ -197,6 +198,14 @@ button {
 .card-text h3 {
   color: var(--c-red);
   font-size: 2vw;
+}
+
+/* responsive mobile */
+@media only screen and (max-width: 600px) {
+  /* En mobile solamente habrá una columna  */
+  .category {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* -------- Presentación ----------------------------------- */
