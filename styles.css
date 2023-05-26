@@ -33,11 +33,13 @@ nav {
   border-bottom: 1px solid var(--c-yellow);
 }
 
+.logo-container {
+  height: 8vh;
+}
+
 /* navbar image */
 nav img {
-  height: 4vh;
-  max-height: 8vh;
-  width: auto;
+  height: 100%;
 }
 
 /* links alignment */
@@ -51,10 +53,15 @@ nav ul li {
   list-style-type: none;
   margin-left: 2rem;
 }
-/* responsive mobile para los items del menú */
+
 @media only screen and (max-width: 600px) {
+  /* responsive mobile para los items del menú */
   nav ul li {
     line-height: 1vh;
+  }
+  /* logo img */
+  .logo-container {
+    height: 3vh;
   }
 }
 
@@ -309,4 +316,62 @@ article p {
   border-left: 1px solid var(--c-beige);
   padding-left: 1rem;
   margin-top: 0.5rem;
+}
+
+/* -------- footer ----------------------------------- */
+/* footer alignment */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 2rem;
+  padding: 0.9rem 2.4rem;
+}
+
+/* footer image */
+footer img {
+  height: 4vh;
+}
+
+/* links alignment */
+footer ul {
+  display: flex;
+  align-items: center;
+}
+
+/* le quitamos el punto al listado y le añadimos un margen para que no se solapen los elementos*/
+footer ul li {
+  list-style-type: none;
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  /* responsive mobile para los items del menú */
+  nav ul li {
+    line-height: 1vh;
+  }
+  /* footer img */
+  footer img {
+    height: 2vh;
+  }
+}
+
+/* al link de los elementos de la lista le quitamos el subrayado y cambiamos el texto */
+footer a,
+footer ul li a {
+  color: var(--c-red);
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.nav-logo-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo-flex h2 {
+  margin-left: 1rem;
+  color: var(--c-red);
+  font-size: 3.5vw;
 }
