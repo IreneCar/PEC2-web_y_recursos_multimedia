@@ -242,6 +242,48 @@ button {
   margin-right: 2.5vw;
 }
 
+.flex-2col div {
+  width: 40vw;
+}
+
+.svg {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  margin: 2% 45%;
+}
+
+.flo {
+  filter: invert(94%) sepia(89%) saturate(1786%) hue-rotate(319deg)
+    brightness(95%) contrast(97%);
+  transform: scale(0.5);
+  transition-property: background, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.ren {
+  transform: scale(0.5);
+  /* filter: invert(94%) sepia(89%) saturate(1786%) hue-rotate(319deg)
+    brightness(95%) contrast(97%); */
+  transform: scale(0.5);
+  transition-property: background, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.cia {
+  transform: scale(0.5);
+  filter: invert(94%) sepia(89%) saturate(1786%) hue-rotate(319deg)
+    brightness(95%) contrast(97%);
+  transform: scale(0.5);
+  transition-property: background, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
 /* responsive mobile para la disposición de los elementos en la página */
 @media only screen and (max-width: 600px) {
   .flex-2col {
@@ -275,15 +317,18 @@ article p {
   margin-bottom: 1.5rem;
 }
 
-.list-detalle {
-  list-style-type: none;
+/* Poner imagen y listado en row con flex */
+.flex-list {
+  display: flex;
 }
 
-.list-detalle li ul {
-  list-style-type: none;
-  border-left: 1px solid var(--c-red);
-  padding-left: 1rem;
-  margin-top: 0.5rem;
+.flex-list picture {
+  width: 30%;
+  margin-right: 2rem;
+}
+
+.flex-list img {
+  width: 100%;
 }
 
 /* -------- Enlaces ----------------------------------- */
