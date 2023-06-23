@@ -40,6 +40,7 @@ nav {
 /* navbar image */
 nav img {
   height: 100%;
+  width: auto;
 }
 
 /* links alignment */
@@ -62,6 +63,7 @@ nav ul li {
   /* logo img */
   .logo-container {
     height: 3vh;
+    width: auto;
   }
 }
 
@@ -252,6 +254,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 10vw;
+  height: auto;
   margin: 2% 45%;
 }
 
@@ -324,6 +327,7 @@ article p {
 
 .flex-list picture {
   width: 30%;
+  height: auto;
   margin-right: 2rem;
 }
 
